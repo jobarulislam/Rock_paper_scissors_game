@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/rock_paper_scissors.js" defer></script>
+    <link rel="stylesheet" href="../css/rock_paper_scissors.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1 class="title">Rock paper scissors</h1>
+       <div class="button">
+       <button class="button-img" onclick="playGame('rock');
+        ">
+               <img src="../rock-paper-scissor_img/rock-emoji.png" alt="Rock" class="img">
+        </button>
+        <button class="button-img" onclick="playGame('paper');
+        ">
+               <img src="../rock-paper-scissor_img/paper-emoji.png" alt="Paper" class="img">
+        </button>
+        <button class="button-img" onclick="playGame('scissors');
+        ">
+               <img src="../rock-paper-scissor_img/scissors-emoji.png" alt="Scissors" class="img">
+        </button>
+        <button class="restart" onclick="restart();"><i class="fa-solid fa-arrow-rotate-right"></i></button>
+        </div>
+    </header>
+    <div class="result">
+        <div class="outcome"></div>
+        <div class="move">
+            <div class="playerMove"></div>
+            <div class="computerMove"></div>
+        </div>
+        <div class="score"></div>    
+    </div>
+    
+</body>
+</html>
